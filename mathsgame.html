@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="mathsgame.css">
+
+</head>
+<body>
+    <div id="start" onclick="startgame(),change()">
+        <div style=" position:relative; text-align: center; top: 45px;font-size: 55px; cursor: pointer;">Start</div>
+    </div>
+    <div id="container">
+       
+            <div class="box" id="wrong"> <div class="text_inside_coloured_shapes">Gresit </div></div>
+            <div class="box" id="score"><div class="text_inside_coloured_shapes"> Scor:0</div> </div>
+            <div class="box" id="right"> <div class="text_inside_coloured_shapes"> Corect</div> </div>
+             
+           
+       
+        <div id="cube">
+            <div id="text"></div>
+        </div>
+      
+        <div class="flex-container">
+            <div class="hov" id="0" onclick="score(this),change()"></div>
+            <div class="hov"  id="1"  onclick="score(this),change()"></div>  
+            <div class="hov" id="2" onclick="score(this),change()"></div>
+            <div class="hov" id="3" onclick="score(this),change()"></div>
+        </div>
+    </div>
+    <script src="mathsgame.js"></script>
+</body>
+</html>
